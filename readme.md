@@ -5,6 +5,10 @@ Demo project of EY Doctors created by beau. This project is only use for demo pu
 
 Windows Visual Studio 2017 or higher
 
+Technology used:
+
+Angular 7, Asp.Net Core, Web API, Entity Framework and SQLite
+
 Project Startup:
 
 1. Download project from GIT

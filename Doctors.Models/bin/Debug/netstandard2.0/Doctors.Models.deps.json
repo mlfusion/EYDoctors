@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "cfe1dc2a80602aef150a12815387068463a61a0d"
+    "signature": "9026b18400741c018f3524cbd28457ee9fcaa7a5"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,7 +10,7 @@
       "Doctors.Models/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "System.ComponentModel.Annotations": "4.2.0.0"
+          "System.ComponentModel.Annotations": "4.4.0"
         },
         "runtime": {
           "Doctors.Models.dll": {}
@@ -22,11 +22,11 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "System.ComponentModel.Annotations/4.2.0.0": {
+      "System.ComponentModel.Annotations/4.4.0": {
         "runtime": {
-          "System.ComponentModel.Annotations.dll": {
+          "lib/netstandard2.0/System.ComponentModel.Annotations.dll": {
             "assemblyVersion": "4.2.0.0",
-            "fileVersion": "4.6.27110.4"
+            "fileVersion": "4.6.25519.3"
           }
         }
       }
@@ -52,10 +52,12 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "System.ComponentModel.Annotations/4.2.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
+    "System.ComponentModel.Annotations/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-29K3DQ+IGU7LBaMjTo7SI7T7X/tsMtLvz1p56LJ556Iu0Dw3pKZw5g8yCYCWMRxrOF0Hr0FU0FwW0o42y2sb3A==",
+      "path": "system.componentmodel.annotations/4.4.0",
+      "hashPath": "system.componentmodel.annotations.4.4.0.nupkg.sha512"
     }
   }
 }
