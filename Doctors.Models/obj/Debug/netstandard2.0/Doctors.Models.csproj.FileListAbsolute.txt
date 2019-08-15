@@ -1,0 +1,12 @@
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Models/bin/Debug/netstandard2.0/Doctors.Models.deps.json
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Models/bin/Debug/netstandard2.0/Doctors.Models.dll
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Models/bin/Debug/netstandard2.0/Doctors.Models.pdb
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Models/bin/Debug/netstandard2.0/System.ComponentModel.Annotations.dll
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Models/bin/Debug/netstandard2.0/System.ComponentModel.Annotations.xml
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Models/obj/Debug/netstandard2.0/Doctors.Models.csproj.CoreCompileInputs.cache
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Models/obj/Debug/netstandard2.0/Doctors.Models.AssemblyInfoInputs.cache
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Models/obj/Debug/netstandard2.0/Doctors.Models.AssemblyInfo.cs
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Models/obj/Debug/netstandard2.0/Doctors.Models.csproj.CopyComplete
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Models/obj/Debug/netstandard2.0/Doctors.Models.dll
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Models/obj/Debug/netstandard2.0/Doctors.Models.pdb
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Models/obj/Debug/netstandard2.0/Doctors.Models.csprojAssemblyReference.cache

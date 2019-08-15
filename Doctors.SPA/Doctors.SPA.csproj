@@ -1,0 +1,120 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>ClientApp\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+
+    <!-- Set this to true if you enable server-side prerendering -->
+    <BuildServerSideRenderer>false</BuildServerSideRenderer>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App">
+      <PrivateAssets Condition="'%(PackageReference.Version)' == ''">all</PrivateAssets>
+      <Publish Condition="'%(PackageReference.Version)' == ''">true</Publish>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.6" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Content Remove="$(SpaRoot)**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+    <None Remove="ClientApp\src\services.ts" />
+    <None Remove="ClientApp\src\services\services.ts" />
+    <None Remove="doctors.db" />
+    <None Remove="doctors.db" />
+    <None Remove="ClientApp\src\app\app.routing.ts" />
+    <None Remove="ClientApp\src\app\_resolvers\doctor-list.resolvers.ts" />
+    <None Remove="ClientApp\README.md" />
+    <None Remove="ClientApp\src\app\_pipes\average.pipe.ts" />
+    <None Remove="ClientApp\src\app\_pipes\rating-status.pipe.ts" />
+    <None Remove="ClientApp\src\app\_services\doctor.service.ts" />
+    <None Remove="ClientApp\src\app\_resolvers\doctor-list %28copy%29.resolvers.ts" />
+    <None Remove="ClientApp\src\app\_resolvers\doctor-list %28another copy%29.resolvers.ts" />
+    <None Remove="ClientApp\src\app\_resolvers\doctor-list %283rd copy%29.resolvers.ts" />
+    <None Remove="ClientApp\src\app\_services\doctor %28copy%29.service.ts" />
+    <None Remove="ClientApp\src\app\_services\language %28copy%29.service.ts" />
+    <None Include="**/*" />
+    <None Include="**/*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Doctors.Models\Doctors.Models.csproj" />
+    <ProjectReference Include="..\Doctors.Data\Doctors.Data.csproj" />
+    <ProjectReference Include="..\Doctors.Business\Doctors.Business.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions \" />
+    <Folder Include="ClientApp\src\services\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Mappers\" />
+    <Folder Include="ClientApp\src\app\doctor\" />
+    <Folder Include="ClientApp\src\app\_services\" />
+    <Folder Include="ClientApp\src\app\_models\" />
+    <Folder Include="ClientApp\src\app\_resolvers\" />
+    <Folder Include="ClientApp\src\app\_pipes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\services\services.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\app.routing.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_resolvers\doctor-list.resolvers.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_pipes\average.pipe.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_pipes\rating-status.pipe.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_services\doctor.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_resolvers\language-list.resolvers.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_resolvers\specialty-list.resolvers.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_resolvers\medical-school-list.resolvers.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_services\language.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_services\medical-school.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_services\specialty.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\_services\auth.service.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20190808013127_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190808013127_InitialCreate.cs" />
+    <Compile Remove="Migrations\RepositoryContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20190809184154_UpdateDoctorSpeciltys.cs" />
+    <Compile Remove="Migrations\20190809184154_UpdateDoctorSpeciltys.Designer.cs" />
+    <Compile Remove="Migrations\20190809185138_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190809185138_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190809190430_InitialCreated.cs" />
+    <Compile Remove="Migrations\20190809190430_InitialCreated.Designer.cs" />
+  </ItemGroup>
+  <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --prod" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr -- --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
+      <DistFiles Include="$(SpaRoot)node_modules\**" Condition="'$(BuildServerSideRenderer)' == 'true'" />
+      <ResolvedFileToPublish Include="@(DistFiles-&gt;'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>

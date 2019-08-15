@@ -1,0 +1,14 @@
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/bin/Debug/netstandard2.0/Doctors.Business.deps.json
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/bin/Debug/netstandard2.0/Doctors.Business.dll
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/bin/Debug/netstandard2.0/Doctors.Business.pdb
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/bin/Debug/netstandard2.0/Doctors.Data.dll
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/bin/Debug/netstandard2.0/Doctors.Models.dll
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/bin/Debug/netstandard2.0/Doctors.Data.pdb
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/bin/Debug/netstandard2.0/Doctors.Models.pdb
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/obj/Debug/netstandard2.0/Doctors.Business.csprojAssemblyReference.cache
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/obj/Debug/netstandard2.0/Doctors.Business.csproj.CoreCompileInputs.cache
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/obj/Debug/netstandard2.0/Doctors.Business.AssemblyInfoInputs.cache
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/obj/Debug/netstandard2.0/Doctors.Business.AssemblyInfo.cs
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/obj/Debug/netstandard2.0/Doctors.Business.csproj.CopyComplete
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/obj/Debug/netstandard2.0/Doctors.Business.dll
+/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.Business/obj/Debug/netstandard2.0/Doctors.Business.pdb

@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="{200C4277-08F5-4B91-BA38-BB6DAE84F6A0}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Doctors.SPA/ClientApp/src/app/nav-menu/nav-menu.component.html">
+    <Files>
+      <File FileName="Doctors.Models/Doctor.cs" Line="1" Column="1" />
+      <File FileName="Doctors.SPA/Controllers/DoctorsController.cs" />
+      <File FileName="Doctors.SPA/Dtos/DoctorDto.cs" />
+      <File FileName="Doctors.SPA/Controllers/LanguageController.cs" Line="46" Column="10" />
+      <File FileName="Doctors.Data/Context/RepositoryContext.cs" Line="47" Column="10" />
+      <File FileName="Doctors.SPA/ClientApp/src/app/nav-menu/nav-menu.component.html" Line="34" Column="22" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Doctors.Solution" expanded="True">
+            <Node name="Doctors.Data" expanded="True">
+              <Node name="Context" expanded="True" />
+            </Node>
+            <Node name="Doctors.Models" expanded="True" />
+            <Node name="Doctors.SPA" expanded="True">
+              <Node name="ClientApp" expanded="True">
+                <Node name="src" expanded="True">
+                  <Node name="app" expanded="True">
+                    <Node name="nav-menu" expanded="True">
+                      <Node name="nav-menu.component.html" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Doctors.NUnit PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Doctors.SPA PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.SPA/Controllers/LanguageController.cs" relfile="Doctors.SPA/Controllers/LanguageController.cs" line="72" column="1" />
+      <Breakpoint file="/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.SPA/Controllers/LanguageController.cs" relfile="Doctors.SPA/Controllers/LanguageController.cs" line="30" column="1" />
+      <Breakpoint file="/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.SPA/Controllers/LanguageController.cs" relfile="Doctors.SPA/Controllers/LanguageController.cs" line="22" column="1" />
+      <Breakpoint file="/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.SPA/Controllers/LanguageController.cs" relfile="Doctors.SPA/Controllers/LanguageController.cs" line="53" column="1" />
+      <Breakpoint file="/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.NUnit/UnitTest1.cs" relfile="Doctors.NUnit/UnitTest1.cs" line="39" column="1" />
+      <Breakpoint file="/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.NUnit/UnitTest1.cs" relfile="Doctors.NUnit/UnitTest1.cs" line="28" column="1" />
+      <Breakpoint file="/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.NUnit/UnitTest1.cs" relfile="Doctors.NUnit/UnitTest1.cs" line="34" column="1" />
+      <Breakpoint file="/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.NUnit/UnitTest1.cs" relfile="Doctors.NUnit/UnitTest1.cs" line="49" column="1" />
+      <Breakpoint file="/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.SPA/Controllers/DoctorsController.cs" relfile="Doctors.SPA/Controllers/DoctorsController.cs" line="79" column="1" />
+      <Breakpoint file="/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.SPA/Controllers/DoctorsController.cs" relfile="Doctors.SPA/Controllers/DoctorsController.cs" line="54" column="1" />
+      <Breakpoint file="/Users/mlfusion_dev/Projects/Doctors.Solution/Doctors.SPA/Controllers/PatientRatingController.cs" relfile="Doctors.SPA/Controllers/PatientRatingController.cs" line="31" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

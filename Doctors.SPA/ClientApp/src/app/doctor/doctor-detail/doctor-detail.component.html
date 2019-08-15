@@ -1,0 +1,122 @@
+<div class="container-fluid"  *ngIf="doctor">
+
+    <div class="clearfix"></div>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <div class="row">
+
+                <div class="col-md-8">
+                    <h6 class="m-0 font-weight-bold text-primary float-left">Dr. {{doctor.name}} Detail</h6>
+                </div>
+                <div class="col-md-4">
+                        <h6 class="m-0 font-weight-bold text-primary float-right"><a [routerLink]="['/doctor-list/']"><i class="fa fa-plus"></i> Return to List</a></h6>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="card-body">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="doctor.name" readonly />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="gender">Gender</label>
+                            <input type="text" class="form-control" id="gender" name="gender" [(ngModel)]="doctor.gender" readonly />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="language">Language</label>
+                            <input type="text" class="form-control" id="language" name="language" [(ngModel)]="doctor.language.name" readonly />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="specialty">Specialty</label>
+                            <input type="text" class="form-control" id="specialty" name="specialty" [(ngModel)]="doctor.specialty.name" readonly />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="medicalSchool">Medical School</label>
+                            <input type="text" class="form-control" id="medicalSchool" name="medicalSchool" [(ngModel)]="doctor.medicalSchool.name" readonly />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-8">
+
+                    <div class="table-responsive">
+
+                        <h4>Patient Reveiws</h4>
+                        <hr />
+
+                        <table width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Comments</th>
+                                    <th>Rating</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let rating of doctor.patientRatings">
+                                    <td>{{rating.comments}}</td>
+                                    <td>{{rating.rating}} Stars</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- add reveiw section -->
+    <div class="card">
+        <div class="card-header">
+            <h6 class="m-0 font-weight-bold text-primary float-left">Add a reveiw</h6>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <form #f="ngForm" name="form" (ngSubmit)="addReview()">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="comments" placeholder="Enter review here..." [(ngModel)]="comments" required />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <select  class="form-control" name="selectedOption" [(ngModel)]="selectedOption" required>
+                                    <option [value]="rating" *ngFor="let rating of ratings">{{rating}} star</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-12 text-right">
+                                <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Submit</button>
+                                <button type="button" class="btn btn-danger ml-1" (click)="clearReview()">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

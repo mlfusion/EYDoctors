@@ -1,0 +1,18 @@
+
+
+.invalid-data {
+    border: 2px solid red;
+}
+
+.valid-data {
+    border: 2px solid rgb(19, 92, 4);
+}
+
+.doclink {
+    text-decoration: underline;
+}
+
+.ratingStatus {
+    font-weight: bolder;
+    text-decoration: none !important
+}
